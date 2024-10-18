@@ -178,6 +178,8 @@ After parallelizing key functions in the program, the final results were as foll
 - **Speedup**: Speedup was calculated by comparing the sequential version (1 thread) to the best parallel version (16 threads). The highest speedup achieved was **10.1x** with 16 threads.
 - **Performance**: The best performance improvements were observed when parallelizing the `calculate_error` and `calculate_test` functions. These parallelized functions provided significant reductions in execution time as the number of threads increased, with a clear trend of faster execution as more threads were utilized.
 
+Here is the final paralelized program : [knn_omp12.c](https://github.com/PaulSerin/OMP---Final-Project/blob/8de6c57bd56f200cc71be522d21f0ebdc7cf96e9/Final%20Project/knn_omp12.c)
+
 Here are the final execution times:
 
 | Run         | 1 Thread | 2 Threads | 4 Threads | 8 Threads | 16 Threads |
