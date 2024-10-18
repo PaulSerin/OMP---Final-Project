@@ -37,7 +37,7 @@ The results are as follows:
 
 After running `gprof` on the sequential version of the program, we obtained the following flat profile:
 
-![alt text](Images/gprof1.png)
+![alt text](Final Project/Images/gprof1.png)
 
 From this profile, it was clear that the following three functions take up the majority of the computation time:
 
@@ -57,7 +57,7 @@ I initially attempted to parallelize the functions `calculate_distance`, `calcul
 
 To better understand the bottleneck, I analyzed the call graph:
 
-![alt text](Images/gprof2.png)
+![alt text](Final Project/Images/gprof2.png)
 
 From this, I realized that the functions `calculate_test`, `calculate_error`, and `mergeSort` were making recursive calls to `calculate_distance`, `calculate_distance_test`, and `merge`, respectively.
 
